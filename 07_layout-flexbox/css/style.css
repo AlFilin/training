@@ -40,8 +40,6 @@ html {
 
 body {
     font-family: 'muller', sans-serif;
-    width: 1170px;
-    margin: 0 auto;
 }
 
 ul {
@@ -51,38 +49,47 @@ ul {
 }
 
 h2 {
-    font-family: 'muller';
-    font-style: normal;
-    font-weight: normal;
     font-size: 40px;
-    line-height: 40px;
     color: #333333;
     margin-left: 40px;
 }
 
+h3 {
+    margin: 0;
+}
+
 p {
-    font-family: 'Muller';
     font-weight: 400;
-    font-style: normal;
     font-size: 16px;
     line-height: 16px;
 }
 
 .container {
-    padding-top: 70px;
+    width: 1170px;
+    margin: 0 auto;
 }
 
-.header-logo{
-    position: relative;
-    margin: 30px 0;
+.container:not(:last-child) {
+    margin-bottom: 70px;
+}
+
+.button {
+    padding: 13px 20px;
+    border: 1px solid #CC9933;
+    border-radius: 10px;
+    color: #CC9933;
+    font-size: 16px;
+}
+
+.header-title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 .cabinet {
-    position: absolute;
-    right: 0px;
-    margin: 20px 0;
+    right: auto;
     padding-left: 30px;
-    font-family: 'Muller';
     font-size: 16px;
     line-height: 16px;
     color: #CC9933;
@@ -91,21 +98,19 @@ p {
     background-size: 21px 12px;
 }
 .tele {
-    position: absolute;
-    margin: 17px 30px;
-    font-family: 'Muller';
-    font-weight: 500;
+    margin-left: 35px;
+    margin-right: auto;
     font-size: 20px;
-    line-height: 20px;
     color: #666666;
 }
 
 .header-nav-list {
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .nav-list {
-    position: absolute;
     display: flex;
 }
 
@@ -114,40 +119,25 @@ p {
 }
 
 .header-link {
-font-family: 'Muller';
-font-size: 16px;
-line-height: 16px;
-color: #666666;
+    font-size: 16px;
+    line-height: 16px;
+    color: #666666;
 }
 
 .header-nav-btn {
-    position: absolute;
-    right: 0px;
     display: flex;
-    justify-content: flex-end;
-}
-
-.button {
-    padding: 13px 20px;
-    border: 1px solid #CC9933;
-    border-radius: 10px;
-    color: #CC9933;
-    font-weight: normal;
-    font-size: 16px;
 }
 
 .header-btn {
-    margin-left: 45px;
-}
-
-.main {
-    margin-top: 70px;
+    margin-right: 45px;
 }
 
 .special-list {
     display: flex;
-    flex-flow: row wrap;
-    position: relative;
+    flex-flow: column wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    max-height: 600px;
 }
 
 .special-list-item {
@@ -157,24 +147,22 @@ color: #666666;
 }
 
 .special-img-1 {
+    margin-bottom: 23px;
     height: 258px;
-    margin: 0 23px 23px 0;
     border-radius: 15px;
     background: linear-gradient(90deg, rgba(48, 64, 89, 0.84), rgba(53, 65, 83, 0) 65.7%), url(../img/special-1.jpg)
 }
 
 .special-img-2 {
-    background-image: url('../img/special-3.jpg');
-    height: 540px;
+    height: 258px;
     border-radius: 15px;
+    background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url('../img/special-2.jpg');
 }
 
 .special-img-3 {
-    height: 258px;
-    position: absolute;
-    bottom: 0;
+    background-image: url('../img/special-3.jpg');
+    height: 540px;
     border-radius: 15px;
-    background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url('../img/special-2.jpg');
 }
 
 .special-content {
@@ -186,7 +174,6 @@ color: #666666;
 }
 
 .special-text {
-    font-family: 'Muller';
     font-size: 20px;
     line-height: 20px;
     color: #FFFFFF;
@@ -195,7 +182,6 @@ color: #666666;
 }
 
 .special-text-one {
-    font-family: 'Muller';
     font-size: 30px;
     line-height: 30px;
     color: #FFFFFF;
@@ -204,18 +190,15 @@ color: #666666;
 }
 
 .list-title {
-    font-family: 'Muller';
     font-weight: bold;
     font-size: 40px;
-    line-height: 40px;
     color: #FFFFFF;
     margin: 0;
-    width: 287px;
+    width: 305px;
     padding-bottom: 15px;
 }
 
 .list-title-one {
-    font-family: 'Muller';
     font-weight: bold;
     font-size: 60px;
     line-height: 60px;
@@ -226,9 +209,7 @@ color: #666666;
 }
 
 .special-list-link{
-    font-family: 'Muller';
     font-size: 16px;
-    line-height: 16px;
     color: #FFCC66;
     padding-right: 15px;
     margin: 0;
@@ -243,8 +224,6 @@ color: #666666;
 
 .company-text {
     width: 888px;
-    font-family: 'Muller';
-    font-weight: normal;
     font-size: 16px;
     line-height: 200%;
     color: #000000;
@@ -272,7 +251,6 @@ color: #666666;
 
 .services-list-text {
     min-height: auto;
-    font-family: 'Muller';
     font-size: 16px;
     line-height: 200%;
     color: #000000;
@@ -280,7 +258,6 @@ color: #666666;
 }
 
 .services-link {
-    font-family: 'Muller';
     font-weight: 500;
     font-size: 20px;
     line-height: 200%;
@@ -363,7 +340,6 @@ color: #666666;
     width: 188px;
     min-height: auto;
     margin: 116px 0 0 45px;
-    font-family: 'Muller';
     font-size: 16px;
     line-height: 200%;
     color: #000000;
@@ -384,52 +360,61 @@ color: #666666;
 }
 
 .features-div {
-    position: relative;
-    margin: 36px 0 54px 45px;
+    margin: 35px 35px 40px 45px;
 }
 
 .large-text {
-    font-family: 'Muller';
     font-weight: 700;
     font-size: 20px;
     Line-height: 20px;
 }
-.features-list-text {
-    font-family: 'Muller';
-    font-size: 16px;
-    line-height: 16px;
-    color: #999999;
+
+.features-list-text-inline {
+    display: inline-block;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 16px;
 }
 
 .star {
-    position: absolute;
-    top: 0;
-    right: 46px;
+    float: right;
+}
+
+.features-title {
+margin-bottom: 16px;
 }
 
 .features-link {
-font-family: 'Muller';
 font-size: 16px;
 line-height: 16px;
 color: #000000;
+margin: 0;
+}
+
+.features-list-text {
+    font-size: 16px;
+    line-height: 16px;
+    color: #999999;
+    margin: 0;
+    margin-bottom: 20px;
 }
 
 .features-picture {
-    position: relative;
     background-image: url('../img/placing-9.jpg');
     background-repeat: no-repeat;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .features-link-picture {
-    position: absolute;
-    bottom: 27px;
-    left: 54px;
-    font-family: 'Muller';
-    font-weight: 500;
     font-size: 20px;
     line-height: 200%;
     color: #FFFFFF;
     padding-right: 15px;
+    margin-bottom: 27px;
 }
 
 .features-link-picture {

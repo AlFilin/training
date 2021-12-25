@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Lagoona</title>
 </head>
 <body>
   <header class="header">
-      <div class="header-logo">
-        <img src="/img/logo.svg" alt="Lagoona-сеть" class="logo">
+    <div class="container">
+      <div class="header-title">
+        <img src="img/logo.svg" alt="Lagoona-сеть" class="logo">
         <a href="tel:+74953225448" class="tele">+7 495 322 54 48</a>
         <a href="" class="desc cabinet">Личный кабинет</a>
       </div>
@@ -41,11 +42,12 @@
           <button class="header-btn button">Обратный звонок</button>
         </div>
       </nav>
+    </div>
   </header>
 
   <main class="main">
-    <section class="special">
-      <div class="container">
+    <div class="container">
+      <section class="special">
         <h2 class="caption">Спецпредложения</h2>
 
         <ul class="special-list">
@@ -57,32 +59,32 @@
             </div>
           </li>
           <li class="special-list-item special-img-2">
-            <div class="special-content-one">
-              <h3 class="list-title-one">Номера категории люкс</h3>
-              <p class="special-text-one">от 5000 р</p>
-              <a href="" class="desc special-list-link special-arrow">Подробнее</a>
-            </div>
-          </li>
-          <li class="special-list-item special-img-3">
             <div class="special-content">
               <h3 class="list-title">Горящий тур на остров Крит</h3>
               <p class="special-text">от 30 000 р</p>
               <a href="" class="desc special-list-link special-arrow">Подробнее</a>
             </div>
           </li>
+          <li class="special-list-item special-img-3">
+            <div class="special-content-one">
+              <h3 class="list-title-one">Номера категории люкс</h3>
+              <p class="special-text-one">от 5000 р</p>
+              <a href="" class="desc special-list-link special-arrow">Подробнее</a>
+            </div>
+          </li>
         </ul>
-      </div>
-    </section>
+      </section>
+    </div>
 
-    <section class="company" id="company">
-      <div class="container">
+    <div class="container">
+      <section class="company" id="company">
         <h2 class="caption">О нас</h2>
         <p class="desc company-text">Идейные соображения высшего порядка, а также сложившаяся структура организации влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом сложившаяся структура организации требуют определения и уточнения существенных финансовых и административных условий.</p>
-      </div>
-    </section>
+      </section>
+    </div>
 
-    <section class="services" id="services">
-      <div class="container">
+    <div class="container">
+      <section class="services" id="services">
         <h2 class="caption">Услуги</h2>
 
         <ul class="services-list">
@@ -111,11 +113,11 @@
             </div>
           </li>
         </ul>
-      </div>
-    </section>
+      </section>
+    </div>
 
-    <section class="benefits" id="benefits">
-      <div class="container">
+    <div class="container">
+      <section class="benefits" id="benefits">
         <h2 class="caption">Преимущества</h2>
 
         <ul class="benefits-list">
@@ -144,187 +146,203 @@
             <p class="desc benefits-list-text">Значимость этого настолько очевидна, что консультация наших экспертов помогает</p>
           </li>
         </ul>
-      </div>
-    </section>
+      </section>
+    </div>
 
-    <section class="features" id="features">
-      <div class="container">
+    <div class="container">
+      <section class="features" id="features">
         <h2 class="caption">Размещение</h2>
 
         <ul class="features-list">
           <li class="features-list-item">
-            <img class="features-image" src="/img/placing-1.jpg" alt="отель">
+            <img class="features-image" src="img/placing-1.jpg" alt="отель">
 
             <div class="features-div">
-              <p class="desc features-list-text">от <span class="large-text">4 698 р</span> / ночь</p>
+              <p class="desc features-list-text-inline">от <span class="large-text">4 698 р</span> / ночь</p>
+
+              <div class="star">
+                <img src="img/star.svg" alt="Рейтинг отеля 4 из 5">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/empty-star.svg" alt="">
+              </div>
+
               <h3 class="features-title">
                 <a href="" class="features-link">Lagoona española</a>
               </h3>
               <p class="desc features-list-text">Барселона, Испания</p>
 
-              <div class="star">
-                <img src="/img/star.svg" alt="Рейтинг отеля 4 из 5">
-                <img src="/img/star.svg" alt="">
-                <img src="/img/star.svg" alt="">
-                <img src="/img/star.svg" alt="">
-                <img src="/img/empty-star.svg" alt="">
-              </div>
-
               <button class="features-btn button">Номера</button>
-            </div> 
+
+            </div>
           </li>
 
           <li class="features-list-item">
-            <img class="features-image" src="/img/placing-2.jpg" alt="отель">
+            <img class="features-image" src="img/placing-2.jpg" alt="отель">
 
             <div class="features-div">
-              <p class="desc features-list-text">от <span class="large-text">5 148  р</span> / ночь</p>
+              <p class="desc features-list-text-inline">от <span class="large-text">5 148  р</span> / ночь</p>
+
+              <div class="star">
+                <img src="img/star.svg" alt="Рейтинг отеля 4 из 5">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/empty-star.svg" alt="">
+              </div>
+
               <h3 class="features-title">
                 <a href="" class="features-link">Lagoona son típicas</a>
               </h3>
               <p class="desc features-list-text">Барселона, Испания</p>
-            
-              <div class="star">
-                <img src="/img/star.svg" alt="Рейтинг отеля 4 из 5">
-                <img src="/img/star.svg" alt="">
-                <img src="/img/star.svg" alt="">
-                <img src="/img/star.svg" alt="">
-                <img src="/img/empty-star.svg" alt="">
-              </div>
-            
+
               <button class="features-btn button">Номера</button>
+
             </div>
           </li>
 
           <li class="features-list-item">
-            <img class="features-image" src="/img/placing-3.jpg" alt="отель">
+            <img class="features-image" src="img/placing-3.jpg" alt="отель">
 
             <div class="features-div">
-              <p class="desc features-list-text">от <span class="large-text">6 254 р</span> / ночь</p>
+              <p class="desc features-list-text-inline">от <span class="large-text">6 254 р</span> / ночь</p>
+
+              <div class="star">
+                <img src="img/star.svg" alt="Рейтинг отеля 5 из 5">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+              </div>
+
               <h3 class="features-title">
                 <a href="" class="features-link">Lagoona de la guerra</a>
               </h3>
               <p class="desc features-list-text">Барселона, Испания</p>
-            
-              <div class="star">
-                <img src="/img/star.svg" alt="Рейтинг отеля 5 из 5">
-                <img src="/img/star.svg" alt="">
-                <img src="/img/star.svg" alt="">
-                <img src="/img/star.svg" alt="">
-                <img src="/img/star.svg" alt="">
-              </div>
-            
+
               <button class="features-btn button">Номера</button>
+
             </div>
           </li>
 
           <li class="features-list-item">
-            <img class="features-image" src="/img/placing-4.jpg" alt="отель">
+            <img class="features-image" src="img/placing-4.jpg" alt="отель">
 
             <div class="features-div">
-              <p class="desc features-list-text">от <span class="large-text">6 320 р</span> / ночь</p>
+              <p class="desc features-list-text-inline">от <span class="large-text">6 320 р</span> / ночь</p>
+
+              <div class="star">
+                <img src="img/star.svg" alt="Рейтинг отеля 5 из 5">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+              </div>
+
               <h3 class="features-title">
                 <a href="" class="features-link">Lagoona mentira piadosa</a>
               </h3>
               <p class="desc features-list-text">Барселона, Испания</p>
-            
-              <div class="star">
-                <img src="/img/star.svg" alt="Рейтинг отеля 5 из 5">
-                <img src="/img/star.svg" alt="">
-                <img src="/img/star.svg" alt="">
-                <img src="/img/star.svg" alt="">
-                <img src="/img/star.svg" alt="">
-              </div>
-            
+
               <button class="features-btn button">Номера</button>
+
             </div>
           </li>
 
           <li class="features-list-item">
-            <img class="features-image" src="/img/placing-5.jpg" alt="отель">
+            <img class="features-image" src="img/placing-5.jpg" alt="отель">
 
             <div class="features-div">
-              <p class="desc features-list-text">от <span class="large-text">6 457 р</span> / ночь</p>
+              <p class="desc features-list-text-inline">от <span class="large-text">6 457 р</span> / ночь</p>
+
+              <div class="star">
+                <img src="img/star.svg" alt="Рейтинг отеля 4 из 5">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/empty-star.svg" alt="">
+              </div>
+
               <h3 class="features-title">
                 <a href="" class="features-link">Lagoona empujar la creatividad</a>
               </h3>
               <p class="desc features-list-text">Барселона, Испания</p>
-            
-              <div class="star">
-                <img src="/img/star.svg" alt="Рейтинг отеля 4 из 5">
-                <img src="/img/star.svg" alt="">
-                <img src="/img/star.svg" alt="">
-                <img src="/img/star.svg" alt="">
-                <img src="/img/empty-star.svg" alt="">
-              </div>
-            
+
               <button class="features-btn button">Номера</button>
+
             </div>
           </li>
 
           <li class="features-list-item">
-            <img class="features-image" src="/img/placing-6.jpg" alt="отель">
+            <img class="features-image" src="img/placing-6.jpg" alt="отель">
 
             <div class="features-div">
-              <p class="desc features-list-text">от <span class="large-text">6 320 р</span> / ночь</p>
+              <p class="desc features-list-text-inline">от <span class="large-text">6 320 р</span> / ночь</p>
+
+              <div class="star">
+                <img src="img/star.svg" alt="Рейтинг отеля 4 из 5">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/empty-star.svg" alt="">
+              </div>
+
               <h3 class="features-title">
                 <a href="" class="features-link">Lagoona el retorno</a>
               </h3>
               <p class="desc features-list-text">Барселона, Испания</p>
-            
-              <div class="star">
-                <img src="/img/star.svg" alt="Рейтинг отеля 4 из 5">
-                <img src="/img/star.svg" alt="">
-                <img src="/img/star.svg" alt="">
-                <img src="/img/star.svg" alt="">
-                <img src="/img/empty-star.svg" alt="">
-              </div>
-            
+
               <button class="features-btn button">Номера</button>
+
             </div>
           </li>
 
           <li class="features-list-item">
-            <img class="features-image" src="/img/placing-7.jpg" alt="отель">
+            <img class="features-image" src="img/placing-7.jpg" alt="отель">
 
             <div class="features-div">
-              <p class="desc features-list-text">от <span class="large-text">6 505 р</span> / ночь</p>
+              <p class="desc features-list-text-inline">от <span class="large-text">6 505 р</span> / ночь</p>
+
+              <div class="star">
+                <img src="img/star.svg" alt="Рейтинг отеля 5 из 5">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+              </div>
+
               <h3 class="features-title">
                 <a href="" class="features-link">Lagoona mentira piadosa</a>
               </h3>
               <p class="desc features-list-text">Барселона, Испания</p>
-            
-              <div class="star">
-                <img src="/img/star.svg" alt="Рейтинг отеля 5 из 5">
-                <img src="/img/star.svg" alt="">
-                <img src="/img/star.svg" alt="">
-                <img src="/img/star.svg" alt="">
-                <img src="/img/star.svg" alt="">
-              </div>
-            
+
               <button class="features-btn button">Номера</button>
+
             </div>
           </li>
 
           <li class="features-list-item">
-            <img class="features-image" src="/img/placing-8.jpg" alt="отель">
+            <img class="features-image" src="img/placing-8.jpg" alt="отель">
 
             <div class="features-div">
-              <p class="desc features-list-text">от <span class="large-text">6 824 р</span> / ночь</p>
+              <p class="desc features-list-text-inline">от <span class="large-text">6 824 р</span> / ночь</p>
+
+              <div class="star">
+                <img src="img/star.svg" alt="Рейтинг отеля 4 из 5">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/star.svg" alt="">
+                <img src="img/empty-star.svg" alt="">
+              </div>
+
               <h3 class="features-title">
                 <a href="" class="features-link">Lagoona suerte siguió siempre</a>
               </h3>
               <p class="desc features-list-text">Барселона, Испания</p>
-            
-              <div class="star">
-                <img src="/img/star.svg" alt="Рейтинг отеля 4 из 5">
-                <img src="/img/star.svg" alt="">
-                <img src="/img/star.svg" alt="">
-                <img src="/img/star.svg" alt="">
-                <img src="/img/empty-star.svg" alt="">
-              </div>
-            
+
               <button class="features-btn button">Номера</button>
+
             </div>
           </li>
 
@@ -332,8 +350,8 @@
             <a href="" class="features-link-picture">Посмотреть все варианты</a>
           </li>
         </ul>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 </body>
 </html>
