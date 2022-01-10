@@ -42,28 +42,6 @@ body {
     font-family: 'muller', sans-serif;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-h2 {
-    font-size: 40px;
-    color: #333333;
-    margin-left: 40px;
-}
-
-h3 {
-    margin: 0;
-}
-
-p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-}
-
 .container {
     width: 1170px;
     margin: 0 auto;
@@ -81,6 +59,26 @@ p {
     font-size: 16px;
 }
 
+.caption {
+    font-size: 40px;
+    font-weight: 400;
+    color: #333333;
+    margin: 0;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  margin: 0;
+}
+
+.header {
+  margin-bottom: 70px;
+}
+
 .header-title{
     display: flex;
     align-items: center;
@@ -88,7 +86,7 @@ p {
 }
 
 .cabinet {
-    right: auto;
+    margin-left: auto;
     padding-left: 30px;
     font-size: 16px;
     line-height: 16px;
@@ -98,8 +96,7 @@ p {
     background-size: 21px 12px;
 }
 .tele {
-    margin-left: 35px;
-    margin-right: auto;
+    padding-left: 35px;
     font-size: 20px;
     color: #666666;
 }
@@ -112,10 +109,13 @@ p {
 
 .nav-list {
     display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .header-list-item {
-    padding: 27px 0 27px 45px;
+    margin: 27px 0 27px 45px;
 }
 
 .header-link {
@@ -126,6 +126,8 @@ p {
 
 .header-nav-btn {
     display: flex;
+    justify-content: space-evenly;
+    width: 370px;
 }
 
 .header-btn {
@@ -138,6 +140,9 @@ p {
     align-content: space-between;
     justify-content: space-between;
     max-height: 600px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .special-list-item {
@@ -148,29 +153,26 @@ p {
 
 .special-img-1 {
     margin-bottom: 23px;
-    height: 258px;
     border-radius: 15px;
     background: linear-gradient(90deg, rgba(48, 64, 89, 0.84), rgba(53, 65, 83, 0) 65.7%), url(../img/special-1.jpg)
 }
 
 .special-img-2 {
-    height: 258px;
     border-radius: 15px;
     background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url('../img/special-2.jpg');
 }
 
 .special-img-3 {
     background-image: url('../img/special-3.jpg');
-    height: 540px;
     border-radius: 15px;
 }
 
 .special-content {
-    padding: 40px 0 0 40px;
+    padding: 40px 0 40px 40px;
 }
 
 .special-content-one {
-    margin: 211px 0 0 40px;
+    padding: 210px 0 40px 40px;
 }
 
 .special-text {
@@ -178,7 +180,7 @@ p {
     line-height: 20px;
     color: #FFFFFF;
     margin: 0;
-    padding-bottom: 45px;
+    margin-bottom: 47px;
 }
 
 .special-text-one {
@@ -186,16 +188,16 @@ p {
     line-height: 30px;
     color: #FFFFFF;
     margin: 0;
-    padding-bottom: 45px;
+    margin-bottom: 47px;
 }
 
 .list-title {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 34px;
     color: #FFFFFF;
     margin: 0;
     width: 305px;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .list-title-one {
@@ -205,7 +207,7 @@ p {
     color: #FFFFFF;
     width: 298px;
     margin: 0;
-    padding-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .special-list-link{
@@ -224,7 +226,6 @@ p {
 
 .company-text {
     width: 888px;
-    font-size: 16px;
     line-height: 200%;
     color: #000000;
 }
@@ -232,6 +233,9 @@ p {
 .services-list {
     display: flex;
     flex-flow: row wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .services-list-item {
@@ -246,12 +250,11 @@ p {
 }
 
 .services-content {
-    margin: 191px 0 0 45px;
+    padding: 191px 0 0 45px;
 }
 
 .services-list-text {
     min-height: auto;
-    font-size: 16px;
     line-height: 200%;
     color: #000000;
     margin: 0;
@@ -291,6 +294,9 @@ p {
 .benefits-list {
     display: flex;
     flex-flow: row wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .benefits-list-item {
@@ -338,9 +344,7 @@ p {
 
 .benefits-list-text {
     width: 188px;
-    min-height: auto;
-    margin: 116px 0 0 45px;
-    font-size: 16px;
+    padding: 116px 0 0 45px;
     line-height: 200%;
     color: #000000;
 }
@@ -348,6 +352,9 @@ p {
 .features-list {
     display: flex;
     flex-flow: row wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .features-list-item {
@@ -360,7 +367,7 @@ p {
 }
 
 .features-div {
-    margin: 35px 35px 40px 45px;
+    padding: 35px 35px 40px 45px;
 }
 
 .large-text {
@@ -372,7 +379,6 @@ p {
 .features-list-text-inline {
     display: inline-block;
     font-size: 20px;
-    margin: 0;
     margin-bottom: 16px;
 }
 
@@ -381,28 +387,24 @@ p {
 }
 
 .features-title {
-margin-bottom: 16px;
+    margin: 0 0 16px 0;
 }
 
 .features-link {
-font-size: 16px;
-line-height: 16px;
-color: #000000;
-margin: 0;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+    margin: 0;
 }
 
 .features-list-text {
-    font-size: 16px;
-    line-height: 16px;
     color: #999999;
-    margin: 0;
     margin-bottom: 20px;
 }
 
 .features-picture {
     background-image: url('../img/placing-9.jpg');
     background-repeat: no-repeat;
-    
     display: flex;
     flex-direction: row;
     align-items: flex-end;
