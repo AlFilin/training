@@ -1,4 +1,5 @@
 html {
+    line-height: 0;
 	box-sizing: border-box;
 }
 
@@ -18,40 +19,45 @@ img {
 }
 
 body {
-  font-family: 'muller', sans-serif;
+  font-family: "Muller", sans-serif;
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: 'muller';
-    src: url('../layoutHotel/fonts/MullerBold.woff2') format('woff2'),
-      url('../layoutHotel/fonts/MullerBold.woff') format('woff');
+    font-family: "Muller";
+    src: local("Muller-Bold"),
+      url("../fonts/MullerBold.woff2") format("woff2"),
+      url("../fonts/MullerBold.woff") format("woff");
     font-display: swap;
-    font-weight: 800;
+    font-weight: 700;
     font-style: normal;
   }
 
 @font-face {
-    font-family: 'muller';
-    src: url('../layoutHotel/fonts/MullerMedium.woff2') format('woff2'),
-      url('../layoutHotel/fonts/MullerMedium.woff') format('woff');
+    font-family: "Muller";
+    src: local("Muller-Medium"),
+      url("../fonts/MullerMedium.woff2") format("woff2"),
+      url("../fonts/MullerMedium.woff") format("woff");
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Muller";
+    src: local("Muller-Regular"),
+      url("../fonts/MullerRegular.woff2") format("woff2"),
+      url("../fonts/MullerRegular.woff") format("woff");
     font-display: swap;
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'muller';
-    src: url('../layoutHotel/fonts/MullerRegular.woff2') format('woff2'),
-      url('../layoutHotel/fonts/MullerRegular.woff') format('woff');
-    font-display: swap;
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'muller';
-    src: url('../layoutHotel/fonts/MullerLight.woff2') format('woff2'),
-      url('../layoutHotel/fonts/MullerLight.woff') format('woff');
+    font-family: "Muller";
+    src: local("Muller-Light"),
+      url("../fonts/MullerLight.woff2") format("woff2"),
+      url("../fonts/MullerLight.woff") format("woff");
     font-display: swap;
     font-weight: 300;
     font-style: normal;
@@ -76,6 +82,7 @@ body {
 
 .caption {
     font-size: 40px;
+    line-height: 40px;
     font-weight: 400;
     color: #333333;
     margin: 0;
@@ -84,14 +91,19 @@ body {
 }
 
 .desc {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
-  margin: 0;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0;
+}
+
+.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
-  margin-bottom: 70px;
+    margin-bottom: 70px;
 }
 
 .header-title{
@@ -101,7 +113,7 @@ body {
 }
 
 .logo {
-  margin-right: 35px;
+    margin-right: 35px;
 }
 
 .cabinet {
@@ -115,6 +127,7 @@ body {
     background-size: 21px 12px;
 }
 .tele {
+    font-weight: 500;
     font-size: 20px;
     color: #666666;
 }
@@ -122,16 +135,19 @@ body {
 .header-nav-list {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    background: #FFFFFF;
+    border-radius: 15px;
 }
 
 .nav-list {
     display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    justify-content: center;
     width: 745px;
+    border-right: 1px solid #e1e1e1;
+}
+
+.header-list-item:not(:last-child) {
+    margin-right: 45px;
 }
 
 .header-link {
@@ -142,18 +158,20 @@ body {
 
 .header-nav-btn {
     display: flex;
-    justify-content: space-evenly;
-    width: 430px;
+    justify-content: center;
+    width: 425px;
 }
+
+.header-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
 .special-list {
     display: flex;
     flex-flow: column wrap;
     align-content: space-between;
     justify-content: space-between;
     max-height: 600px;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
 .special-list-item {
@@ -190,6 +208,7 @@ body {
     font-size: 20px;
     line-height: 20px;
     color: #FFFFFF;
+    opacity: 0.8;
     margin: 0;
     margin-bottom: 47px;
 }
@@ -198,20 +217,22 @@ body {
     font-size: 30px;
     line-height: 30px;
     color: #FFFFFF;
+    opacity: 0.8;
     margin: 0;
     margin-bottom: 47px;
 }
 
 .list-title {
-    font-weight: bold;
-    font-size: 34px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
     color: #FFFFFF;
     margin: 0;
     margin-bottom: 15px;
 }
 
 .list-title-one {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 60px;
     line-height: 60px;
     color: #FFFFFF;
@@ -221,6 +242,7 @@ body {
 
 .special-list-link{
     font-size: 16px;
+    line-height: 16px;
     color: #FFCC66;
     padding-right: 15px;
     margin: 0;
@@ -242,31 +264,30 @@ body {
 .services-list {
     display: flex;
     flex-flow: row wrap;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
 .services-list-item {
     width: 573px;
-    min-height: 330px;
-    background-repeat: no-repeat;
-    background-size: 100%;
 }
 
 .services-list-item:not(:nth-child(2n)) {
     margin: 0 23px 23px 0;
 }
 
+.serv-img {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0px 0px;
+}
+
 .services-content {
-    padding: 191px 125px 50px 45px;
+    padding: 26px 125px 50px 45px;
+    background: #FFFFFF;
+    border-radius: 0 0 15px 15px;
 }
 
 .services-list-text {
-    min-height: auto;
     line-height: 200%;
-    color: #000000;
-    margin: 0;
 }
 
 .services-link {
@@ -284,39 +305,29 @@ body {
     background-position: center right;
 }
 
-.services-image-1 {
-    background-image: url('../img/services-1.jpg');
-}
-
-.services-image-2 {
-    background-image: url('../img/services-2.jpg');
-}
-
-.services-image-3 {
-    background-image: url('../img/services-3.jpg');
-}
-
-.services-image-4 {
-    background-image: url('../img/services-4.jpg');
-}
-
 .benefits-list {
     display: flex;
     flex-flow: row wrap;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
 .benefits-list-item {
     width: 275px;
-    background-repeat: no-repeat;
-    background-size: 66px;
-    background-position: 45px 40px;
+    background: #FFFFFF;
+    border-radius: 15px;
 }
 
 .benefits-list-item:not(:nth-child(4n)) {
     margin: 0 23px 23px 0;
+}
+
+.benefits-list-item:nth-child(4n) {
+    margin-bottom: 23px;
+}
+
+.ben-icon {
+    background-repeat: no-repeat;
+    background-size: 66px;
+    background-position: 45px 40px;
 }
 
 .benefits-icon-1{
@@ -360,18 +371,25 @@ body {
 .features-list {
     display: flex;
     flex-flow: row wrap;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
 }
 
 .features-list-item {
     width: 374px;
-    height: 440px;
+    background: #FFFFFF;
+    border-radius: 15px;
 }
 
 .features-list-item:not(:nth-child(3n)) {
     margin: 0 23px 23px 0;
+}
+
+.features-list-item:nth-child(3n) {
+    margin-bottom: 23px;
+}
+
+.features-image {
+    border-radius: 15px 15px 0px 0px;
+    background-repeat: no-repeat;
 }
 
 .features-div {
@@ -382,6 +400,10 @@ body {
     font-weight: 700;
     font-size: 20px;
     Line-height: 20px;
+}
+
+.light-text {
+    color: #999999;
 }
 
 .features-list-text-inline {
@@ -399,10 +421,12 @@ body {
 }
 
 .features-link {
+    display: inline-block;
     font-size: 16px;
     line-height: 16px;
     color: #000000;
     margin: 0;
+    margin-bottom: 16px;
 }
 
 .features-list-text {
@@ -412,11 +436,9 @@ body {
 
 .features-picture {
     background-image: url('../img/placing-9.jpg');
+    background-size: 100%;
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
+    padding: 373px 54px 27px;
 }
 
 .features-link-picture {
@@ -424,10 +446,6 @@ body {
     line-height: 200%;
     color: #FFFFFF;
     padding-right: 15px;
-    margin-bottom: 27px;
-}
-
-.features-link-picture {
     background-image: url('../img/Rectangle\ 2.svg');
     background-size: 11px;
     background-repeat: no-repeat;
