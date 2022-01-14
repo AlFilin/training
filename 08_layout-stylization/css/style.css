@@ -1,0 +1,453 @@
+html {
+    line-height: 0;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+  font-family: "Muller", sans-serif;
+  font-weight: 400;
+}
+
+@font-face {
+    font-family: "Muller";
+    src: local("Muller-Bold"),
+      url("../fonts/MullerBold.woff2") format("woff2"),
+      url("../fonts/MullerBold.woff") format("woff");
+    font-display: swap;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: "Muller";
+    src: local("Muller-Medium"),
+      url("../fonts/MullerMedium.woff2") format("woff2"),
+      url("../fonts/MullerMedium.woff") format("woff");
+    font-display: swap;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Muller";
+    src: local("Muller-Regular"),
+      url("../fonts/MullerRegular.woff2") format("woff2"),
+      url("../fonts/MullerRegular.woff") format("woff");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Muller";
+    src: local("Muller-Light"),
+      url("../fonts/MullerLight.woff2") format("woff2"),
+      url("../fonts/MullerLight.woff") format("woff");
+    font-display: swap;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.container:not(:last-child) {
+    margin-bottom: 70px;
+}
+
+.button {
+    padding: 13px 20px;
+    border: 1px solid #CC9933;
+    border-radius: 10px;
+    color: #CC9933;
+    font-size: 16px;
+}
+
+.caption {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    color: #333333;
+    margin: 0;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.desc {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0;
+}
+
+.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    margin-bottom: 70px;
+}
+
+.header-title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo {
+    margin-right: 35px;
+}
+
+.cabinet {
+    margin-left: auto;
+    padding-left: 30px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #CC9933;
+    background-image: url('../img/arrow4.svg');
+    background-repeat: no-repeat;
+    background-size: 21px 12px;
+}
+.tele {
+    font-weight: 500;
+    font-size: 20px;
+    color: #666666;
+}
+
+.header-nav-list {
+    display: flex;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    width: 745px;
+    border-right: 1px solid #e1e1e1;
+}
+
+.header-list-item:not(:last-child) {
+    margin-right: 45px;
+}
+
+.header-link {
+    font-size: 16px;
+    line-height: 16px;
+    color: #666666;
+}
+
+.header-nav-btn {
+    display: flex;
+    justify-content: center;
+    width: 425px;
+}
+
+.header-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.special-list {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+    justify-content: space-between;
+    max-height: 600px;
+}
+
+.special-list-item {
+    width: 573px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.special-img-1 {
+    margin-bottom: 23px;
+    border-radius: 15px;
+    background: linear-gradient(90deg, rgba(48, 64, 89, 0.84), rgba(53, 65, 83, 0) 65.7%), url(../img/special-1.jpg)
+}
+
+.special-img-2 {
+    border-radius: 15px;
+    background: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url('../img/special-2.jpg');
+}
+
+.special-img-3 {
+    background-image: url('../img/special-3.jpg');
+    border-radius: 15px;
+}
+
+.special-content {
+    padding: 40px 235px 40px 40px;
+}
+
+.special-content-one {
+    padding: 210px 235px 40px 40px;
+}
+
+.special-text {
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin: 0;
+    margin-bottom: 47px;
+}
+
+.special-text-one {
+    font-size: 30px;
+    line-height: 30px;
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin: 0;
+    margin-bottom: 47px;
+}
+
+.list-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.list-title-one {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.special-list-link{
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFCC66;
+    padding-right: 15px;
+    margin: 0;
+}
+
+.special-arrow {
+    background-image: url('../img/arrow3.svg');
+    background-size: 11px;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.company-text {
+    width: 888px;
+    line-height: 200%;
+    color: #000000;
+}
+
+.services-list {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.services-list-item {
+    width: 573px;
+}
+
+.services-list-item:not(:nth-child(2n)) {
+    margin: 0 23px 23px 0;
+}
+
+.serv-img {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.services-content {
+    padding: 26px 125px 50px 45px;
+    background: #FFFFFF;
+    border-radius: 0 0 15px 15px;
+}
+
+.services-list-text {
+    line-height: 200%;
+}
+
+.services-link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 200%;
+    color: #CC9933;
+    padding-right: 20px;
+}
+
+.services-arrow {
+    background-image: url('../img/arrow3.svg');
+    background-size: 11px;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.benefits-list {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.benefits-list-item {
+    width: 275px;
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+
+.benefits-list-item:not(:nth-child(4n)) {
+    margin: 0 23px 23px 0;
+}
+
+.benefits-list-item:nth-child(4n) {
+    margin-bottom: 23px;
+}
+
+.ben-icon {
+    background-repeat: no-repeat;
+    background-size: 66px;
+    background-position: 45px 40px;
+}
+
+.benefits-icon-1{
+    background-image: url('../img/Benefits-1.svg');
+}
+
+.benefits-icon-2{
+    background-image: url('../img/Benefits-2.svg');
+}
+
+.benefits-icon-3{
+    background-image: url('../img/Benefits-3.svg');
+}
+
+.benefits-icon-4{
+    background-image: url('../img/Benefits-4.svg');
+}
+
+.benefits-icon-5{
+    background-image: url('../img/Benefits-5.svg');
+}
+
+.benefits-icon-6{
+    background-image: url('../img/Benefits-6.svg');
+}
+
+.benefits-icon-7{
+    background-image: url('../img/Benefits-7.svg');
+}
+
+.benefits-icon-8{
+    background-image: url('../img/Benefits-8.svg');
+}
+
+.benefits-list-text {
+    padding: 116px 42px 41px 45px;
+    line-height: 200%;
+    color: #000000;
+}
+
+.features-list {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.features-list-item {
+    width: 374px;
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+
+.features-list-item:not(:nth-child(3n)) {
+    margin: 0 23px 23px 0;
+}
+
+.features-list-item:nth-child(3n) {
+    margin-bottom: 23px;
+}
+
+.features-image {
+    border-radius: 15px 15px 0px 0px;
+    background-repeat: no-repeat;
+}
+
+.features-div {
+    padding: 35px 35px 40px 45px;
+}
+
+.large-text {
+    font-weight: 700;
+    font-size: 20px;
+    Line-height: 20px;
+}
+
+.light-text {
+    color: #999999;
+}
+
+.features-list-text-inline {
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.star {
+    float: right;
+}
+
+.features-title {
+    margin: 0 0 16px 0;
+}
+
+.features-link {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.features-list-text {
+    color: #999999;
+    margin-bottom: 20px;
+}
+
+.features-picture {
+    background-image: url('../img/placing-9.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 373px 54px 27px;
+}
+
+.features-link-picture {
+    font-size: 20px;
+    line-height: 200%;
+    color: #FFFFFF;
+    padding-right: 15px;
+    background-image: url('../img/Rectangle\ 2.svg');
+    background-size: 11px;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
