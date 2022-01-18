@@ -78,6 +78,8 @@ body {
     border-radius: 10px;
     color: #CC9933;
     font-size: 16px;
+    margin: 0px 10px;
+    background: #FFFFFF;
 }
 
 .caption {
@@ -104,6 +106,7 @@ body {
 
 .header {
     margin-bottom: 70px;
+    margin-top: 30px;
 }
 
 .header-title{
@@ -268,22 +271,41 @@ body {
 
 .services-list-item {
     width: 573px;
+    background: #FFFFFF;
+    border-radius: 15px 15px 15px 15px;
 }
 
 .services-list-item:not(:nth-child(2n)) {
     margin: 0 23px 23px 0;
 }
 
+.services-list-item:nth-child(2n) {
+    margin: 0 0 23px 0;
+}
+
 .serv-img {
     background-size: 100%;
     background-repeat: no-repeat;
-    border-radius: 15px 15px 0px 0px;
+}
+
+.services-image-1 {
+    background-image: url("../img/services-1.jpg");
+}
+
+.services-image-2 {
+    background-image: url("../img/services-2.jpg");
+}
+
+.services-image-3 {
+    background-image: url("../img/services-3.jpg");
+}
+
+.services-image-4 {
+    background-image: url("../img/services-4.jpg");
 }
 
 .services-content {
-    padding: 26px 125px 50px 45px;
-    background: #FFFFFF;
-    border-radius: 0 0 15px 15px;
+    padding: 190px 125px 50px 45px;
 }
 
 .services-list-text {
