@@ -69,10 +69,6 @@ body {
     margin-bottom: 70px;
 }
 
-.container:last-of-type {
-    margin-bottom: 0;
-}
-
 .button {
     padding: 13px 20px;
     border: 1px solid #CC9933;
@@ -457,10 +453,13 @@ body {
 }
 
 .features-picture {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     background-image: url('../img/placing-9.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
-    padding: 373px 54px 27px;
+    margin-bottom: 27px;
 }
 
 .features-link-picture {
