@@ -1,5 +1,4 @@
 html {
-    line-height: 0;
 	box-sizing: border-box;
 }
 
@@ -21,6 +20,7 @@ img {
 body {
   font-family: "Muller", sans-serif;
   font-weight: 400;
+  background: #E5E5E5;
 }
 
 @font-face {
@@ -66,10 +66,11 @@ body {
 .container {
     width: 1170px;
     margin: 0 auto;
+    margin-bottom: 70px;
 }
 
-.container:not(:last-child) {
-    margin-bottom: 70px;
+.container:last-of-type {
+    margin-bottom: 0;
 }
 
 .button {
@@ -78,7 +79,7 @@ body {
     border-radius: 10px;
     color: #CC9933;
     font-size: 16px;
-    margin: 0px 10px;
+    line-height: 16px;
     background: #FFFFFF;
 }
 
@@ -105,8 +106,7 @@ body {
 }
 
 .header {
-    margin-bottom: 70px;
-    margin-top: 30px;
+    padding-top: 30px;
 }
 
 .header-title{
@@ -137,7 +137,6 @@ body {
 
 .header-nav-list {
     display: flex;
-    align-items: center;
     background: #FFFFFF;
     border-radius: 15px;
 }
@@ -145,8 +144,7 @@ body {
 .nav-list {
     display: flex;
     justify-content: center;
-    width: 745px;
-    border-right: 1px solid #e1e1e1;
+    padding: 26px 56px 26px 45px;
 }
 
 .header-list-item:not(:last-child) {
@@ -161,26 +159,27 @@ body {
 
 .header-nav-btn {
     display: flex;
-    justify-content: center;
-    width: 425px;
+    padding: 13px 45px 13px 55px;
 }
 
 .header-btn:not(:last-child) {
     margin-right: 40px;
 }
 
-.special-list {
+.special-card {
     display: flex;
-    flex-flow: column wrap;
-    align-content: space-between;
     justify-content: space-between;
-    max-height: 600px;
 }
 
-.special-list-item {
-    width: 573px;
+.card {
+    min-height: 258px;
     background-repeat: no-repeat;
     background-size: 100%;
+    border-radius: 15px;
+}
+
+.special-card-item {
+    width: 573px;
 }
 
 .special-img-1 {
@@ -439,11 +438,12 @@ body {
 }
 
 .features-title {
-    margin: 0 0 16px 0;
+    margin-bottom: 16px;
 }
 
-.features-link {
+.features-link-title {
     display: inline-block;
+    font-weight: 400;
     font-size: 16px;
     line-height: 16px;
     color: #000000;
