@@ -492,17 +492,18 @@ body {
 
 /*tour*/
 
+.contain-tour {
+  padding: 38px 45px 71px 40px;
+  background: #E9E9E9;
+  border-radius: 15px;
+}
+
 .caption-tour {
     padding: 0;
 }
 
-.div-tour {
-    padding: 38px 45px 71px 40px;
-    background: #E9E9E9;
-    border-radius: 15px;
-}
-
 .form-tour {
+    display: flex;
     padding: 28px 28px;
     background: #FFFFFF;
     border-radius: 15px;
@@ -512,60 +513,54 @@ body {
     display: flex;
 }
 
-.field-tour {
-    border: none;
-    padding: 0;
-    margin: 0;
-}
-
-.field-tour:not(:first-child) {
-    padding-left: 20px;
-}
-
 .field-tour:not(:last-child) {
     margin-right: 20px;
 }
 
-.legend-tour {
+.field-tour:not(:first-child) {
+    padding-left: 20px;
+    border-left: 1px solid #E1E1E1;
+}
+
+.field-tour:last-child {
+    margin-right: 30px;
+}
+
+.label-tour {
+    display: block;
     font-size: 12px;
     line-height: 12px;
     padding-bottom: 15px;
 }
 
 .select-tour {
-    border: 1px solid #E5E5E5;
+    border: none;
     font-size: 16px;
     line-height: 16px;
-    color: #000000;
+    appearance: none;
+    background-image: url("../img/arrow-rout.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 10px 6px;
 }
 
 .city-tour {
     padding-right: 36px;
-    appearance: none;
-    background-image: url("../img/arrow-rout.png");
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: 10px 6px;
 }
 
 .country-tour {
     padding-right: 87px;
-    appearance: none;
-    background-image: url("../img/arrow-rout.png");
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: 10px 6px;
 }
 
 .tour-text {
-  border: none;
-  font-size: 16px;
-  line-height: 16px;
+    border: none;
+    font-size: 16px;
+    line-height: 16px;
 }
 
 .date-tour {
-  padding: 0;
-  width: 121px;
+    padding: 0;
+    width: 121px;
 }
 
 ::-webkit-calendar-picker-indicator {
@@ -574,11 +569,17 @@ body {
 
 .number-tour {
     width: 121px;
+    border-bottom:1px solid #CCC;
 }
 
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
     opacity: 1;
+}
+
+.tour-button {
+    padding-left: 20px;
+    border-left: 1px solid #E1E1E1;
 }
 
 .tour-btn {
@@ -610,10 +611,12 @@ body {
 .chapter-contacts:not(:first-child):not(:last-child) {
     padding-top: 25px;
     padding-bottom: 24px;
+    border-bottom: 1px solid #C4C4C4;
 }
 
 .chapter-contacts:first-child {
     padding-bottom: 24px;
+    border-bottom: 1px solid #C4C4C4;
 }
 
 .chapter-contacts:last-child {
@@ -632,7 +635,6 @@ body {
 }
 
 .link-contacts {
-    display: block;
     font-size: 16px;
     line-height: 150%;
     color: #CC9933;
@@ -702,7 +704,7 @@ body {
 }
 
 .footer-vast {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .tele-footer {
@@ -713,12 +715,38 @@ body {
     margin-bottom: 14px;
 }
 
-.footer-social-icon {
+.footer-social {
     display: flex;
     flex-direction: column;
-    width: 25px;
 }
 
 .footer-icon:not(:last-child) {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-icon {
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+}
+
+.footer-icon-1 {
+    background-image: url("../img/Component\ 25.svg");
+}
+
+.footer-icon-2 {
+    background-image: url("../img/twitter.svg");
+}
+
+.footer-icon-3 {
+    background-image: url("../img/facebook.svg");
+}
+
+.footer-icon-4 {
+    background-image: url("../img/social.svg");
+}
+
+.footer-icon-5 {
+    background-image: url("../img/instagram.svg");
 }
