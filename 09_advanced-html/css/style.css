@@ -610,12 +610,12 @@ body {
 
 .chapter-contacts:not(:first-child):not(:last-child) {
     padding-top: 25px;
-    padding-bottom: 24px;
+    padding-bottom: 22px;
     border-bottom: 1px solid #C4C4C4;
 }
 
 .chapter-contacts:first-child {
-    padding-bottom: 24px;
+    padding-bottom: 23px;
     border-bottom: 1px solid #C4C4C4;
 }
 
