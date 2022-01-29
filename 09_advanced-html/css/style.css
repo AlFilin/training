@@ -493,9 +493,9 @@ body {
 /*tour*/
 
 .contain-tour {
-  padding: 38px 45px 71px 40px;
-  background: #E9E9E9;
-  border-radius: 15px;
+    padding: 38px 45px 71px 40px;
+    background: #E9E9E9;
+    border-radius: 15px;
 }
 
 .caption-tour {
@@ -634,6 +634,10 @@ body {
     width: 230px;
 }
 
+.line-break-link {
+    margin: 0;
+}
+
 .link-contacts {
     font-size: 16px;
     line-height: 150%;
@@ -725,10 +729,8 @@ body {
 }
 
 .footer-icon {
-    width: 25px;
-    height: 25px;
     background-repeat: no-repeat;
-    background-size: 25px 25px;
+    background-size: 100%;
 }
 
 .footer-icon-1 {
@@ -749,4 +751,10 @@ body {
 
 .footer-icon-5 {
     background-image: url("../img/instagram.svg");
+}
+
+.lint-icon {
+    display: block;
+    width: 25px;
+    height: 25px;
 }

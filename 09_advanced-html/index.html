@@ -376,8 +376,8 @@
 
               <ul class="tour-flex list">
                 <li class="field-tour">
-                <label class="label-tour">Город вылета</label>
-                <select name="Город вылета" class="select-tour city-tour">
+                <label for="city" class="label-tour">Город вылета</label>
+                <select name="Город вылета" id="city" class="select-tour city-tour">
                   <option value="Санкт-Петербург">Санкт-Петербург</option>
                   <option value="Москва">Москва</option>
                   <option value="Мурманск">Мурманск</option>
@@ -389,8 +389,8 @@
                 </li>
 
                 <li class="field-tour">
-                <label class="label-tour">Страна</label>
-                <select name="Страна" class="select-tour country-tour">
+                <label for="country" class="label-tour">Страна</label>
+                <select name="Страна" id="country" class="select-tour country-tour">
                   <option value="Австралия">Австралия</option>
                   <option value="Канада">Канада</option>
                   <option value="Россия">Россия</option>
@@ -399,18 +399,18 @@
                 </li>
 
                 <li class="field-tour">
-                <label class="label-tour">Дата прибытия</label>
-                <input type="date" name="Дата вылета" class="tour-text date-tour">
+                <label for="calendar" class="label-tour">Дата прибытия</label>
+                <input type="date" id="calendar" name="Дата вылета" class="tour-text date-tour">
                 </li>
 
                 <li class="field-tour">
-                <label class="label-tour">Ночей</label>
-                <input type="number" name="Количество ночей" min="1" max="60"  placeholder="0" class="tour-text number-tour">
+                <label for="night" class="label-tour">Ночей</label>
+                <input type="number" id="night" name="Количество ночей" min="1" max="60"  placeholder="0" class="tour-text number-tour">
                 </li>
 
                 <li class="field-tour">
-                <label class="label-tour">Туристы</label>
-                <input type="number" name="Количество человек" min="1" max="10" placeholder="0" required class="tour-text number-tour">
+                <label for="person" class="label-tour">Туристы</label>
+                <input type="number" id="person" name="Количество человек" min="1" max="10" placeholder="0" required class="tour-text number-tour">
                 </li>
 
 
@@ -439,8 +439,7 @@
             <li class="chapter-contacts">
               <h3 class="contacts-title">Телефоны</h3>
               <div class="part-contacts">
-                <a href="tel:+74995356434" class="link-contacts">+7 499 535 64 34</a>
-                <br>
+                <p class="line-break-link"><a href="tel:+74995356434" class="link-contacts">+7 499 535 64 34</a></p>
                 <a href="tel:+74950050544" class="link-contacts">+7 495 005 05 44</a>
               </div>
             </li>
@@ -485,32 +484,34 @@
           <div class="footer-contacts">
             <p class="footer-text footer-contacts-text">11710, улица Юности, дом 5 строение 4, офис 2</p>
             <div class="tele-footer">
-              <a href="tel:+74995356434" class="link-contacts">+7 499 535 64 34</a>
-              <br>
+              <p class="line-break-link">
+                <a href="tel:+74995356434" class="link-contacts">+7 499 535 64 34</a>
+              </p>
               <a href="tel:+74950050544" class="link-contacts">+7 495 005 05 44</a>
             </div>
             <div class="mail-footer">
-              <a href="mailto:lg.oona@mail.ru" class="link-contacts">lg.oona@mail.ru</a>
-              <br>
+              <p class="line-break-link">
+                <a href="mailto:lg.oona@mail.ru" class="link-contacts">lg.oona@mail.ru</a>
+              </p>
               <a href="mailto:hotels.ln@mail.ru" class="link-contacts">hotels.ln@mail.ru</a>
             </div>
           </div>
         </div>
         <ul class="footer-social list">
           <li class="footer-icon footer-icon-1">
-            <a href="" class=""></a>
+            <a href="https://www.tripadvisor.ru" class="lint-icon soc-tripadvisor"></a>
           </li>
           <li class="footer-icon footer-icon-2">
-            <a href="" class=""></a>
+            <a href="https://twitter.com/" class="lint-icon soc-twitter"></a>
           </li>
           <li class="footer-icon footer-icon-3">
-            <a href="" class=""></a>
+            <a href="https://www.facebook.com" class="lint-icon soc-facebook"></a>
           </li>
           <li class="footer-icon footer-icon-4">
-            <a href="" class=""></a>
+            <a href="https://vk.com" class="lint-icon soc-vk"></a>
           </li>
           <li class="footer-icon footer-icon-5">
-            <a href="" class=""></a>
+            <a href="https://www.instagram.com" class="lint-icon soc-instagram"></a>
           </li>
         </ul>
       </div>
