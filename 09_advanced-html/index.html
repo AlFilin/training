@@ -370,12 +370,13 @@
 
     <section class="tour indent" id="tour">
       <div class="container">
-        <div class="div-tour">
+        <div class="contain-tour">
           <h2 class="caption caption-tour">Хочу тур</h2>
           <form action="https://jsonplaceholder.typicode.com/posts" method="post" class="form-tour">
-            <div class="tour-flex">
-              <fieldset class="field-tour">
-                <legend class="legend-tour">Город вылета</legend>
+
+              <ul class="tour-flex list">
+                <li class="field-tour">
+                <label class="label-tour">Город вылета</label>
                 <select name="Город вылета" class="select-tour city-tour">
                   <option value="Санкт-Петербург">Санкт-Петербург</option>
                   <option value="Москва">Москва</option>
@@ -385,37 +386,38 @@
                   <option value="Ставрополь">Ставрополь</option>
                   <option value="Владивосток">Владивосток</option>
                 </select>
-              </fieldset>
+                </li>
 
-              <fieldset class="field-tour">
-                <legend class="legend-tour">Страна</legend>
+                <li class="field-tour">
+                <label class="label-tour">Страна</label>
                 <select name="Страна" class="select-tour country-tour">
                   <option value="Австралия">Австралия</option>
                   <option value="Канада">Канада</option>
                   <option value="Россия">Россия</option>
                   <option value="Франция">Франция</option>
                 </select>
-              </fieldset>
+                </li>
 
-              <fieldset class="field-tour">
-                <legend class="legend-tour">Дата прибытия</legend>
+                <li class="field-tour">
+                <label class="label-tour">Дата прибытия</label>
                 <input type="date" name="Дата вылета" class="tour-text date-tour">
-              </fieldset>
+                </li>
 
-              <fieldset class="field-tour">
-                <legend class="legend-tour">Ночей</legend>
+                <li class="field-tour">
+                <label class="label-tour">Ночей</label>
                 <input type="number" name="Количество ночей" min="1" max="60"  placeholder="0" class="tour-text number-tour">
-              </fieldset>
+                </li>
 
-              <fieldset class="field-tour">
-                <legend class="legend-tour">Туристы</legend>
-                <input type="number" name="Количество человек" min="1" max="10" placeholder="0" class="tour-text number-tour">
-              </fieldset>
+                <li class="field-tour">
+                <label class="label-tour">Туристы</label>
+                <input type="number" name="Количество человек" min="1" max="10" placeholder="0" required class="tour-text number-tour">
+                </li>
 
-              <div class="field-tour">
+
+              </ul>
+              <div class="tour-button">
                 <button class="button tour-btn">Найти</button>
               </div>
-            </div>
           </form>
         </div>
       </div>
@@ -426,23 +428,24 @@
         <h2 class="caption">Контакты</h2>
         <div class="total-contacts">
 
-          <div class="all-contacts-section">
-            <div class="chapter-contacts">
+          <ul class="all-contacts-section list">
+            <li class="chapter-contacts">
               <h3 class="contacts-title">Адрес</h3>
               <div class="part-contacts">
                 <p class="contacts-descr">Москва, улица Юности, дом 5 строение 4, офис 2</p>
               </div>
-            </div>
+            </li>
 
-            <div class="chapter-contacts">
+            <li class="chapter-contacts">
               <h3 class="contacts-title">Телефоны</h3>
               <div class="part-contacts">
                 <a href="tel:+74995356434" class="link-contacts">+7 499 535 64 34</a>
+                <br>
                 <a href="tel:+74950050544" class="link-contacts">+7 495 005 05 44</a>
               </div>
-            </div>
+            </li>
 
-            <div class="chapter-contacts">
+            <li class="chapter-contacts">
               <h3 class="contacts-title">E-mail</h3>
               <div class="part-contacts">
                 <a href="mailto:lg.oona@mail.ru" class="link-contacts">lg.oona@mail.ru</a>
@@ -450,20 +453,21 @@
                 <a href="mailto:hotels.ln@mail.ru" class="link-contacts">hotels.ln@mail.ru</a>
                 <p class="mail-text">по вопросам сотрудничества</p>
               </div>
-            </div>
+            </li>
 
-            <div class="chapter-contacts">
+            <li class="chapter-contacts">
               <h3 class="contacts-title">График</h3>
               <div class="part-contacts">
                 <p class="contacts-descr">Понедельник - пятница, с 10:00 до 19:00</p>
               </div>
-            </div>
-            <div class="chapter-contacts">
+            </li>
+
+            <li class="chapter-contacts">
               <button class="button contacts-btn">Построить маршрут</button>
-            </div>
-          </div>
+            </li>
+          </ul>
           <div class="contacts-contain-img">
-            <img src="../09_advanced-html/img/Layer 2 1.jpg" alt="Рецепшен отеля lagoona" class="contacts-img">
+            <img src="img/Layer 2 1.jpg" alt="Рецепшен отеля lagoona" class="contacts-img">
           </div>
         </div>
       </div>
@@ -482,21 +486,33 @@
             <p class="footer-text footer-contacts-text">11710, улица Юности, дом 5 строение 4, офис 2</p>
             <div class="tele-footer">
               <a href="tel:+74995356434" class="link-contacts">+7 499 535 64 34</a>
+              <br>
               <a href="tel:+74950050544" class="link-contacts">+7 495 005 05 44</a>
             </div>
             <div class="mail-footer">
               <a href="mailto:lg.oona@mail.ru" class="link-contacts">lg.oona@mail.ru</a>
+              <br>
               <a href="mailto:hotels.ln@mail.ru" class="link-contacts">hotels.ln@mail.ru</a>
             </div>
           </div>
         </div>
-        <div class="footer-social-icon">
-          <a href="" class="footer-icon"><img src="../09_advanced-html/img/Component 25.svg" alt=""></a>
-          <a href="" class="footer-icon"><img src="../09_advanced-html/img/twitter.svg" alt=""></a>
-          <a href="" class="footer-icon"><img src="../09_advanced-html/img/facebook.svg" alt=""></a>
-          <a href="" class="footer-icon"><img src="../09_advanced-html/img/social.svg" alt=""></a>
-          <a href="" class="footer-icon"><img src="../09_advanced-html/img/instagram.svg" alt=""></a>
-        </div>
+        <ul class="footer-social list">
+          <li class="footer-icon footer-icon-1">
+            <a href="" class=""></a>
+          </li>
+          <li class="footer-icon footer-icon-2">
+            <a href="" class=""></a>
+          </li>
+          <li class="footer-icon footer-icon-3">
+            <a href="" class=""></a>
+          </li>
+          <li class="footer-icon footer-icon-4">
+            <a href="" class=""></a>
+          </li>
+          <li class="footer-icon footer-icon-5">
+            <a href="" class=""></a>
+          </li>
+        </ul>
       </div>
     </div>
   </footer>
